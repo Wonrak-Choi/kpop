@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
     <link rel="stylesheet" href="./css/kpop.css">
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
     <!-- 1. 제이쿼리 코어파일 -->
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-3.3.1.min.js"></script>
@@ -21,9 +22,7 @@
     <!-- 2. 제이쿼리 CDN방식 이용 -->
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script>
-
-    </script>
+    
 </head>
 <body>
     <div id="wrap">
@@ -121,8 +120,8 @@
         <!-- /Header -->
 
         <!-- Slider -->
-        <article>
-            <div class="gallery_wrap">
+        <article class="gallery_wrap">
+            <div class="w1920">
                 <ul class="slide">
                     <li><img src="./images/main_bts.png" alt="슬라이더" ></li>
                     <li><img src="./images/main_newjeans.jpg" alt="슬라이더" ></li>
@@ -207,111 +206,113 @@
             </section>
             <!-- /Section 02 -->
             <!-- Section 03 -->
-            <section class="caxa w1300">
-                <h2>
-                   <span>Album</span>
-                </h2>
-                <div class="caxa_sns">
-                    <ul class="alb_half a_info">
-                        <li>
-                            <a href="#">
+            <section class="sec03">
+                <div class="caxa w1300">
+                    <h2>
+                       <span>Album</span>
+                    </h2>
+                    <div class="caxa_sns">
+                        <ul class="alb_half a_info">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>Dear OHMYGIRL</h3>
+                                        <h4>아티스트 : 오마이걸(OH MY GIRL)</h4>
+                                        <h5>발매일 : 2021.05.10</h5>
+                                    </div>
+                                    <img src="./images/omg.jpg" alt="앨범1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
                                 <div>
-                                    <h3>Dear OHMYGIRL</h3>
-                                    <h4>아티스트 : 오마이걸(OH MY GIRL)</h4>
-                                    <h5>발매일 : 2021.05.10</h5>
+                                    <h3>WIND AND WISH</h3>
+                                    <h4>아티스트 : 비투비</h4>
+                                    <h5>발매일 : 2023.05.02</h5>
                                 </div>
-                                <img src="./images/omg.jpg" alt="앨범1">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <div>
-                                <h3>WIND AND WISH</h3>
-                                <h4>아티스트 : 비투비</h4>
-                                <h5>발매일 : 2023.05.02</h5>
-                            </div>
-                                <img src="./images/btob.jpg" alt="앨범2">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="alb a_info ">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <h3>FOREVER 1 - The 7th Album</h3>
-                                    <h4>아티스트 : 소녀시대 (GIRLS' GENERATION)</h4>
-                                    <h5>발매일 : 2022.08.05</h5>
-                                </div>
-                                <img src="./images/gg_album.jpg" alt="앨범3">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="alb_half a_info">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <h3>I've IVE</h3>
-                                    <h4>아티스트 : IVE(아이브)</h4>
-                                    <h5>발매일 : 2023.04.10</h5>
-                                </div>
-                                <img src="./images/ive.jpg" alt="앨범4" >
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <h3>Free Falling</h3>
-                                    <h4>아티스트 : 투모로우바이투게더</h4>
-                                    <h5>발매일 : 2022.09.19</h5>
-                                </div>
-                                <img src="./images/tobyto.jpg" alt="앨범5">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <h3>Bloom</h3>
-                                    <h4>아티스트 : Red Velvet (레드벨벳)</h4>
-                                    <h5>발매일 : 2022.4.6</h5>
-                                </div>
-                                <img src="./images/red_velvet.jpg" alt="앨범6">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <h3>ME</h3>
-                                    <h4>아티스트 : 지수 (JISOO)</h4>
-                                    <h5>발매일 : 2023.3.31</h5>
-                                </div>
-                                <img src="./images/jisoo.jpg" alt="앨범7">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <h3>WE</h3>
-                                    <h4>아티스트 : WINNER</h4>
-                                    <h5>발매일 : 2019.05.15</h5>
-                                </div>
-                                <img src="./images/winner.jpg" alt="앨범8">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <h3>When We Disco</h3>
-                                    <h4>아티스트 : 박진영</h4>
-                                    <h5>발매일 : 2020.08.12</h5>
-                                </div>
-                                <img src="./images/jyp.jpg" alt="앨범9">
-                            </a>
-                        </li>
-                    </ul>
+                                    <img src="./images/btob.jpg" alt="앨범2">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="alb a_info ">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>FOREVER 1 - The 7th Album</h3>
+                                        <h4>아티스트 : 소녀시대 (GIRLS' GENERATION)</h4>
+                                        <h5>발매일 : 2022.08.05</h5>
+                                    </div>
+                                    <img src="./images/gg_album.jpg" alt="앨범3">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="alb_half a_info">
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>I've IVE</h3>
+                                        <h4>아티스트 : IVE(아이브)</h4>
+                                        <h5>발매일 : 2023.04.10</h5>
+                                    </div>
+                                    <img src="./images/ive.jpg" alt="앨범4" >
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>Free Falling</h3>
+                                        <h4>아티스트 : 투모로우바이투게더</h4>
+                                        <h5>발매일 : 2022.09.19</h5>
+                                    </div>
+                                    <img src="./images/tobyto.jpg" alt="앨범5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>Bloom</h3>
+                                        <h4>아티스트 : Red Velvet (레드벨벳)</h4>
+                                        <h5>발매일 : 2022.4.6</h5>
+                                    </div>
+                                    <img src="./images/red_velvet.jpg" alt="앨범6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>ME</h3>
+                                        <h4>아티스트 : 지수 (JISOO)</h4>
+                                        <h5>발매일 : 2023.3.31</h5>
+                                    </div>
+                                    <img src="./images/jisoo.jpg" alt="앨범7">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>WE</h3>
+                                        <h4>아티스트 : WINNER</h4>
+                                        <h5>발매일 : 2019.05.15</h5>
+                                    </div>
+                                    <img src="./images/winner.jpg" alt="앨범8">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <h3>When We Disco</h3>
+                                        <h4>아티스트 : 박진영</h4>
+                                        <h5>발매일 : 2020.08.12</h5>
+                                    </div>
+                                    <img src="./images/jyp.jpg" alt="앨범9">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        <a href="#">다른 앨범 보기</a>
+                    </p>
                 </div>
-                <p>
-                    <a href="#">다른 앨범 보기</a>
-                </p>
             </section>
             <!-- /Section 03 -->
         </main>
