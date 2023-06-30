@@ -5,6 +5,7 @@ $(function(){
         pager: true,
         slideWidth: 1920,
         auto: true,
+        autoHover: true, // 호버시 정지
         pause: 3000, // 슬라이드 간의 대기 시간 (밀리초 단위)
         speed: 700 // 슬라이드 전환 속도 (밀리초 단위)
     });
@@ -40,7 +41,7 @@ $('.tab_btn li').click(function(){
 $('.gnb').hover(function(){
     // mouseenter()시 이벤트 리스너
     $(this).children().children().next("dl").css({
-        display:"block",backgroundColor: "#fff",top:"60px",zIndex:"10000"
+        display:"block",backgroundColor: "#fff",top:"50px",zIndex:"10000"
     });
 },function(){
     // mouseleave()시 이벤트 리스너

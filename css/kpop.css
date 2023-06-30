@@ -256,7 +256,7 @@ h3 .artist_area ul li{
     margin-right: 76px;
 }
 .real_title .real_time ul li{
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 .real_title .real_time ul li:nth-child(7){
     margin-bottom: 40px;
@@ -287,6 +287,7 @@ h3 .artist_area ul li{
     width: 260px;
 }
 .tab_btn p{
+    margin-top: 18px;
     margin-bottom: 40px;
 }
 .tab_btn li{
