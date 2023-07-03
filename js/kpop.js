@@ -1,13 +1,16 @@
 // 슬라이더
 $(function(){
-    $('.slide').bxSlider({
+    var slider = $('.slide').bxSlider({
         mode: 'horizontal',
         pager: true,
         slideWidth: 1920,
         auto: true,
-        autoHover: true, // 호버시 정지
         pause: 3000, // 슬라이드 간의 대기 시간 (밀리초 단위)
-        speed: 700 // 슬라이드 전환 속도 (밀리초 단위)
+        speed: 500, // 슬라이드 전환 속도 (밀리초 단위)
+        stopAutoOnClick: true, // 버튼 클릭시 자동 슬라이더 정지
+        onSlideAfter: function(){
+            slider.startAuto(); // 슬라이드 변경 후 자동 재생 시작
+        }
     });
 });
 // a태그 # 이벤트 제거
@@ -18,6 +21,11 @@ $('a[href="#"]').on('click',function(e){
 // aside버튼효과
 $(".xIcon").on('click',function(e) {
     $("aside").slideUp("fast");
+});
+// GNB 메뉴
+$(".global>h2>a, .gnb>li>a").on('click',function(e) {
+    $(".toggle_m").slideToggle("fast");
+    $(".gnb>li>dl").slideToggle("fast");
 });
 
 // 탭메뉴
@@ -35,24 +43,4 @@ $('.tab_btn li').click(function(){
     // 해당탭 내용만 보이도록 코딩
     $('.list').hide();
     $('.list').eq(idx).stop().show();
-});
-
-// GNB 메뉴 호버효과
-$('.gnb').hover(function(){
-    // mouseenter()시 이벤트 리스너
-    $(this).children().children().next("dl").css({
-        display:"block",backgroundColor: "#fff",top:"50px",zIndex:"10000"
-    });
-},function(){
-    // mouseleave()시 이벤트 리스너
-    $(this).children().children().next("dl").slideUp(200);
-});
-$('.gnb').hover(function(){
-    // mouseenter()시 이벤트 리스너
-    $('.back').css({
-        display:"block",backgroundColor: "none",zIndex:"9999",width:"100%",hight:"500px"
-    });
-},function(){
-    // mouseleave()시 이벤트 리스너
-    $('.back').slideUp(200);
 });
